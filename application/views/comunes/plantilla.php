@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ES">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bodegas Covisan</title>
+        <script src="<?= base_url('javascript/jquery-1-10-2.js') ?>" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet/less" href="<?= base_url('css/responsive.less') ?>" type="text/css" media="screen" />
+        <script src="<?= base_url('javascript/less.js') ?>" type="text/javascript" charset="utf-8"></script>
+        <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'> <!-- FUENTE CABECERA -->
+        
+    </head>
+    
+    <body>
+        <div id="contenedor">
+            
+            <header>
+                <a href="<?= base_url('inicio') ?>" > </a>
+                
+                <nav>
+                    <a href="<?= base_url('inicio') ?>" >Inicio</a>
+                    <a href="<?= base_url('productos') ?>" >Productos</a>
+                    <a href="<?= base_url('contacta') ?>" >Contacta</a>
+                </nav>
+                
+            </header>
+
+            <div id="contenido">
+                
+                <?= $contenido ?>
+                
+            </div>
+            <div style="clear: both"></div> <!-- SOLUCION DEFINITIVA A LOS PROBLEMAS DE SALIDA DE SITIO EN ALTURA -->
+            
+        </div>
+        <footer>
+            <section id="mapa_del_sitio">
+                <h5>Mapa del sitio</h5>
+                <a href="<?= base_url('inicio') ?>" >Inicio</a>
+                <a href="<?= base_url('productos') ?>" >Productos</a>
+                <a href="<?= base_url('contacta') ?>" >Contacta</a>
+            </section>
+            <section id="enlaces_externos">
+                <h5>Realizado por:</h5>
+                <a href="<?= base_url('portal/inicio') ?>">SoftCaos</a>
+            </section>
+            <section>
+                <h5>Tests pasados:</h5>
+                <p><img src="<?= base_url('images/valid-html5.png') ?>" alt="HTML5 passed" align="center" /></p>
+                <p><img src="<?= base_url('images/valid-css.png') ?>" alt="CSS3 passed" align="center" /></p>
+            </section>
+        </footer>
+    </body>
+    
+</html>

@@ -1,0 +1,374 @@
+@import 'reset.css';
+@import 'grid.less';
+
+
+/*/////////
+// GRID //
+/////////*/
+
+/* Especifica número de columnas y su ancho  */
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+/* Remove the definition below for a pixel-based layout  */
+@total-width: 100%;
+
+
+/*///////////
+// MIXINS //
+///////////*/
+
+/* Asigna border-radius */
+.border-radius(@radius: 5px)
+{
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    behavior: url(ie-css3.htc); /* Este archivo soluciona incompatibilidades con estilos de borde */
+}
+
+
+
+
+/*///////////
+// LAYOUT //
+///////////*/
+
+body
+{
+   background-image: url("../images/fondo2.jpg");
+   background-attachment: fixed;
+   
+    width: 80%;
+    .push();
+}
+
+#contenedor
+{
+    background-color: rgba(255,255,255,0.85);
+    
+    a
+    {
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    header
+    {
+        >a
+        {
+            background-image: url("../images/FachadaCooperativa.png");
+            background-repeat: no-repeat;
+            background-size: 100% 250px;
+            
+            .border-radius(15);
+            border: 1px solid black;
+            
+            display: block;
+            
+            min-width: 100%;
+            height: 200px;
+            padding-top: 50px;
+            
+            font-size: 4em;
+        }
+        
+        nav 
+        {
+            border-top: 3px solid rgb(240,179,47);
+            border-bottom: 3px solid rgb(240,179,47);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 50px;
+            font-family: 'Rochester', cursive;
+            font-weight: bold;
+            letter-spacing: 2px;
+            
+            a 
+            {
+                .column(2.3);
+                .border-radius();
+                .push(0.3);
+                margin-top: 10px;
+                border: 1px solid black;
+                padding: 5px;
+                box-shadow: 2px 2px #d1d1d1;
+                color: black;
+                
+                &:visited
+                {
+                    color: rgb(126,45,36);
+                }
+                
+                &:hover
+                {
+                    color: rgb(240,179,47);
+                }
+            }
+        }
+    }
+    
+    #contenido
+    {
+        background: white;
+        
+        section
+        {
+            .column(11);
+            .border-radius();
+            .push(0.25);
+            
+            border: 1px solid black;
+            padding: 20px;
+            box-shadow: 5px 5px 5px #888888;
+            
+            h2
+            {
+                font-family: 'Rochester', cursive;
+                font-weight: bold;
+                color: rgb(126,45,36);
+                border-bottom: 3px solid rgb(240,179,47);
+                letter-spacing: 2px;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+            }
+            
+            >p 
+            {
+                .column(5);
+            }
+            
+            .articulo
+            {
+                .column(11.5);
+                .border-radius();
+                
+                border: 1px solid black;
+                margin-bottom: 20px;
+                padding: 10px;
+                box-shadow: 5px 5px 5px #888888;
+                
+                figure
+                {
+                    .column(6);
+                    
+                    figcaption
+                    {
+                        .column(4,6);
+                        
+                        font-size: 14px;
+                    }
+                }
+                
+                div
+                {
+                    .column(5.5);
+                    
+                    h1
+                    {
+                        font-family: 'Rochester', cursive;
+                        font-weight: bold;
+                        color: rgb(126,45,36);
+                        border-bottom: 3px solid rgb(240,179,47);
+                        letter-spacing: 2px;
+                        padding-bottom: 5px;
+                    }
+                    
+                    p
+                    {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            
+            .inicio:first-of-type
+            {
+                .column(6);
+                .push(0.5);
+                
+                margin-bottom: 20px;
+                
+                figcaption
+                {
+                    font-size: 14px;
+                }
+            }
+            
+            form
+            {
+                .row(6);
+                
+                padding: 20px;
+                
+                label
+                {
+                    .column(2,6);
+                    text-align: right;
+                    margin-bottom: 15px;
+                }
+                
+                input, textarea
+                {
+                    .column(2,6);
+                    margin-bottom: 15px;
+                }
+                
+                .boton
+                {
+                    .column(3,6);
+                
+                    input:last-of-type
+                    {
+                        max-width: 70px;
+                        float: right;
+                    }
+                }
+            }
+            
+            .tel, .mapa
+            {
+                .column(10);
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            
+            .mapa
+            {
+                margin-top: 15px;
+            }
+        }
+    }
+    
+}
+
+footer
+{
+    color: black;
+    
+    background: linear-gradient(white, rgb(240,179,47));
+    /*position: fixed;
+    bottom: 0;*/
+    height: 100px;
+    padding-top: 15px;
+    
+    section
+    {
+        .column(4);
+        
+        h5, a, p
+        {
+            display: block;
+            text-align: center;
+        }
+        
+        h5, a
+        {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+#login_registro
+{
+    min-height: 100px;
+    
+    h5, a, input, textarea
+    {
+        display: block;
+        text-align:center;
+    }
+    
+    h5, a
+    {
+        height: 40px;
+    }
+    
+    h5
+    {
+        margin-bottom: 10px;;
+    }
+    
+    label
+    {
+        display: none;
+    }
+}
+
+
+
+/*  MEDIA QUERIES */
+
+@media screen and (max-width: 1320px)
+{
+    #contenedor
+    {
+        header
+        {
+            >a
+            {
+                font-size: 3.5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1170px)
+{
+    #contenedor
+    {
+        header
+        {
+            >a
+            {
+                font-size: 3.2em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px)
+{
+    #contenedor
+    {
+        header
+        {
+            >a
+            {
+                font-size: 3em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px)
+{
+    #contenedor
+    {
+        header
+        {
+            >a
+            {
+                font-size: 2.7em;
+            }
+        }
+    }
+}
+
+
+/*  CAMBIO GENERAL DE ESTILO EN 900PX  */
+
+@media screen and (max-width: 900px)
+{
+    #contenedor
+    {
+        header
+        {
+            >a
+            {
+                font-size: 2.5em;
+            }
+        }
+    }
+}
