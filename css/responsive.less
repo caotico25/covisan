@@ -183,7 +183,12 @@ body
                 }
             }
             
-            .inicio:first-of-type
+            .inicio
+            {
+                .column(5);
+            }
+            
+            .inicio:first-of-type, .inicio:last-of-type
             {
                 .column(6);
                 .push(0.5);
@@ -267,32 +272,6 @@ footer
         {
             margin-bottom: 5px;
         }
-    }
-}
-
-#login_registro
-{
-    min-height: 100px;
-    
-    h5, a, input, textarea
-    {
-        display: block;
-        text-align:center;
-    }
-    
-    h5, a
-    {
-        height: 40px;
-    }
-    
-    h5
-    {
-        margin-bottom: 10px;;
-    }
-    
-    label
-    {
-        display: none;
     }
 }
 

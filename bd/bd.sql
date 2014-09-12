@@ -1,3 +1,30 @@
+drop table usuarios;
+
+create table usuarios (
+	id				bigserial		constraint pk_usuarios primary key,
+	usuario			varchar(10)		not null constraint uq_usuarios_usuario unique,
+	passwd			char(32)		not null
+);
+
+
+drop table presentaciones;
+
+create table presentaciones (
+	id				bigserial		constraint pk_presentaciones primary key,
+	presentacion	text			not null
+);
+
+
+drop table productos;
+
+create table productos (
+	id				bigserial		constraint pk_productos primary key,
+	nombre			varchar(20)		not null constraint uq_nombre_productos unique,
+	descripcion		text			not null,
+	precio			numeric(5,2)	not null
+);
+
+
 /*
 *  -----------------
 *  TABLA DE SESIONES

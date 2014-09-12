@@ -16,14 +16,6 @@
             
             <header>
                 <a href="<?= base_url('inicio') ?>" > </a>
-                
-                <nav>
-                    <a href="<?= base_url('inicio') ?>" >Inicio</a>
-                    <a href="<?= base_url('productos') ?>" >Productos</a>
-                    <a href="<?= base_url('contacta') ?>" >Contacta</a>
-                    <!-- INTRODUCIR AQUI UN BOTON OCULTO PARA ACCESO A ADMIN? -->
-                </nav>
-                
             </header>
 
             <div id="contenido">
@@ -47,7 +39,7 @@
             </section>
             <section>
                 <h5>Tests pasados:</h5>
-                <p><a href="<?= base_url('admin/inicio') ?>"><img src="<?= base_url('images/valid-html5.png') ?>" alt="HTML5 passed" align="center" /></a></p>
+                <p><img src="<?= base_url('images/valid-html5.png') ?>" alt="HTML5 passed" align="center" /></p>
                 <p><img src="<?= base_url('images/valid-css.png') ?>" alt="CSS3 passed" align="center" /></p>
             </section>
         </footer>
