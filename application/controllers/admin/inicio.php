@@ -7,7 +7,7 @@ class Inicio extends CI_Controller
      */
     function index()
     {
-        redir_admin('admin/login');
+        redir_admin();
     }
     
     
@@ -16,7 +16,7 @@ class Inicio extends CI_Controller
      */
     function login()
     {
-        $usuario = $this->input->post('usuario_log');
+        $usuario = $this->input->post('usuario');
         
         $reglas = array(
                         array(
@@ -35,7 +35,7 @@ class Inicio extends CI_Controller
         
         if ($this->form_validation->run() == FALSE)
         {
-            redir_sitio('portal/registro');
+            redir_sitio('admin/login');
         }
         else
         {
@@ -46,7 +46,7 @@ class Inicio extends CI_Controller
             $data['usuario'] = $usuario;
             $data['id_login'] = $id_login;
             
-            redirect('portal/inicio', $data);
+            redirect('admin/inicio', $data);
         }
     }
 
@@ -76,4 +76,43 @@ class Inicio extends CI_Controller
             return FALSE;
         }
     }
+    
+    
+    /*
+     *  Funcion para modificar la presentacion
+     */
+    function modificar_presentacion()
+    {
+        $reglas = array(
+                        array(
+                            'field' => 'presentacion',
+                            'label' => 'Presentacion',
+                            'rules' => 'trim|required|callback__usuario_existe'
+                        )
+                    );
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
