@@ -7,6 +7,8 @@ class Inicio extends CI_Controller
      */
     function index()
     {
-        redir_sitio();
+        $data['presentacion'] = $this->Presentacion->obtener();
+        
+        redir_sitio('sitio/inicio', $data);
     }
 }

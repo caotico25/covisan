@@ -75,44 +75,6 @@ class Inicio extends CI_Controller
             $this->form_validation->set_message('_usuario_existe', 'Usuario no válido.');
             return FALSE;
         }
-    }
-    
-    
-    /*
-     *  Funcion para modificar la presentacion
-     */
-    function modificar_presentacion()
-    {
-        $reglas = array(
-                        array(
-                            'field' => 'presentacion',
-                            'label' => 'Presentacion',
-                            'rules' => 'trim|required|callback__usuario_existe'
-                        )
-                    );
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }    
     
 }

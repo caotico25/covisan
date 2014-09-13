@@ -2,7 +2,7 @@
     <h2>Login de administrador</h2>
     <article>
         <p class="tel">Introduzca nombre y contraseña para acceder a la zona de administrador.</p><br /><br />
-        <?= form_error() ?>
+        
         <?= form_open('admin/inicio/login') ?>
             <label for="usuario">Usuario</label><input type="text" name="usuario" value="" id="usuario"/>
             <p class="error"><?= strip_tags(form_error('usuario')) ?></p>

@@ -1,10 +1,8 @@
 <section id="presentacion" class="seccion">
     <h2>Nuestra historia</h2>
     <p>
-        <br /><br />La Cooperativa del CampoVitivinícola Sanluqueña "COVISAN" fueconstituida el 13 de Julio de 1968, inicialmente formada por 41 socios.<br /><br /><br />
-        Actualmentetenemos una producción anual de unos 4 millones de kilogramos de uva, con los que obtenemos unos 3 millones de litros de vino
-        obtenidas de las 350 hectáreas de viñedo de nuestros socios y proveedores.<br/><br /><br />
-        Tenemos una bodega de crianza con 600.000 litros de manzanilla y 300.000 litros de vino con denominación de orígen Jerez-Xérès-Sherry, envejecidos en unas 1300 botqas de roble.
+        <br /><br />
+        <?= nl2br($presentacion->presentacion) ?>
     </p>
     <figure class="inicio">
         <img src="images/BotasEnvejecimiento.png" alt="Botas de envejecimiento" width="375" height="300" />
