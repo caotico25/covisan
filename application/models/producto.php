@@ -9,4 +9,15 @@ class Producto extends CI_Model
     {
         
     }
+    
+    
+    /*
+     *      Funcion para obtener los productos de la base de datos (solo nombre e id)
+     */
+    function obtener_productos_base()
+    {
+        $res = $this->db->query("select id, nombre from productos");
+        
+        return $res->result_array();
+    }
 }

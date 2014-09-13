@@ -298,6 +298,79 @@ body
                     }
                 }
             }
+            
+            .tabla
+            {
+                border:1px solid black;
+                
+                .push(0.5);
+                .border-radius();
+                
+                box-shadow: 5px 5px 5px #888888;
+                
+                .cabecera, .cuerpo
+                {
+                    .column(12);
+                    
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    
+                    div
+                    {
+                        .column(5.5);
+                        .border-radius();
+                        
+                        border:1px solid black;
+                        text-align: center;
+                        background-color: #ffffb9;
+                        padding: 5px;
+                    }
+                }
+                
+                .cuerpo
+                {
+                    div
+                    {
+                        background-color: #e9e9e9;
+                        
+                        &:hover, &:hover + div, &:hover div:first-of-type
+                        {
+                            background-color: #aaaaff;
+                        }
+                        
+                        form
+                        {
+                            .column(5);
+                            padding: 0px;
+                            
+                            input
+                            {
+                                .column(4,5);
+                                .push(2);
+                                
+                                margin-bottom: 0px;
+                            }
+                        }
+                        
+                        .anadir
+                        {
+                            .column(10);
+                            
+                            >input
+                            {
+                                .column(8);
+                                .push(3);
+                            }
+                        }
+                        
+                        &:first-child
+                        {
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+                        }
+                    }
+                }
+            }
         }
     }
     
