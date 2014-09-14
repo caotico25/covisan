@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'www.bodegascovisan.com';
+$config['base_url']	= 'http://bodegascovisan.com';
 
 /*
 |--------------------------------------------------------------------------
