@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'localhost/covisan';
+$config['base_url']	= 'http://www.bodegascovisan.com';
 
 /*
 |--------------------------------------------------------------------------
