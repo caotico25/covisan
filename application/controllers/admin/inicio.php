@@ -35,7 +35,7 @@ class Inicio extends CI_Controller
         
         if ($this->form_validation->run() == FALSE)
         {
-            redir_sitio('admin/login');
+            redir_admin('admin/login');
         }
         else
         {
