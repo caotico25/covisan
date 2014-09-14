@@ -48,7 +48,7 @@
             </section>
             <section id="enlaces_externos">
                 <h5>Realizado por:</h5>
-                <a href="<?= base_url('portal/inicio') ?>">ose Francisco Dominguez Palacios</a>
+                <a href="<?= base_url('portal/inicio') ?>">Jose Francisco Dominguez Palacios</a>
             </section>
             <section>
                 <h5>Tests pasados:</h5>
