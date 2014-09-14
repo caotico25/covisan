@@ -84,12 +84,56 @@ class Productos extends CI_Controller
     }
     
     
+    /*
+     *      Funcion para eliminar un producto
+     */
+    function eliminar_producto()
+    {
+        $this->Producto->eliminar($this->input->post('id_producto'));
+        
+        redirect('admin/productos');
+    }
     
     
-    
-    
-    
-    
+    /*
+     *      Funcion para modificar productos
+     */
+    function modificar_producto()
+    {
+        $reglas = array(
+                        array(
+                            'field' => 'nombre',
+                            'label' => 'nombre',
+                            'rules' => 'trim|required|max_length[20]'
+                        ),
+                        array(
+                            'field' => 'descripcion',
+                            'label' => 'descripcion',
+                            'rules' => 'trim|required|'
+                        ),
+                        array(
+                            'field' => 'precio',
+                            'label' => 'precio',
+                            'rules' => 'trim|required|numeric'
+                        ),
+                    );
+        
+        $this->form_validation->set_rules($reglas);
+        
+        if ($this->form_validation->run() == FALSE)
+        {
+            $data['producto'] = $this->Producto->obtener_producto($this->input->post('id_producto'));
+            
+            redir_admin('admin/mod_producto', $data);
+        }
+        else
+        {
+            $this->Producto->modificar_producto($this->input->post());
+            $data['producto'] = $this->Producto->obtener_producto($this->input->post('id_producto'));
+            
+            redir_admin('admin/mod_producto', $data);
+        }
+    }
     
     
     

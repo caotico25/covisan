@@ -34,6 +34,17 @@ class Producto extends CI_Model
     
     
     /*
+     *      Funcion para obtener toda la informacion de un producto
+     */
+    function obtener_producto($id)
+    {
+        $res = $this->db->query("select * from productos where id = $id");
+        
+        return $res->row_array();
+    }
+    
+    
+    /*
      *      Funcion para dar de alta los datos de un producto
      */
     function alta($datos)
@@ -63,4 +74,30 @@ class Producto extends CI_Model
         $this->db->query("update productos set imagen = ? where id = ?",
                               array('uploads/carteles/' . $file, $id_producto));
     }
+    
+    
+    /*
+     * 
+     */
+    function eliminar($id)
+    {
+        $this->db->query("delete from productos where id = $id");
+    }
+    
+    
+    /*
+     * 
+     */
+    function modificar_producto($datos)
+    {
+        extract($datos);
+        
+        $this->db->query("update productos set nombre = ?, descripcion = ?, precio = $precio", array($nombre, $descripcion));
+    }
+    
+    
+    
+    
+    
+    
 }

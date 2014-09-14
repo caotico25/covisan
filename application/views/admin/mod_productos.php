@@ -12,11 +12,11 @@
                 <?php foreach ($productos as $producto): ?>
                     <div><?= $producto['nombre'] ?></div>
                     <div>
-                        <?= form_open() ?>
+                        <?= form_open('admin/productos/modificar_producto') ?>
                             <input type="hidden" name="id_producto" value="<?= $producto['id']?>" id="id_producto"/>
                             <input type="submit" name="modificar" value="Modificar" id="modificar"/>
                         <?= form_close() ?>
-                        <?= form_open() ?>
+                        <?= form_open('admin/productos/eliminar_producto') ?>
                             <input type="hidden" name="id_producto" value="<?= $producto['id']?>" id="id_producto"/>
                             <input type="submit" name="eliminar" value="Eliminar" id="eliminar"/>
                         <?= form_close() ?>

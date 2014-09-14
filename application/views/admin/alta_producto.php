@@ -1,4 +1,4 @@
-<section>
+<section class="adminicio">
     <h2>Añadir un nuevo producto.</h2>
     <article>
         <p class="tel">Introduzca los datos del nuevo producto:</p>
