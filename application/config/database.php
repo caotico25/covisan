@@ -50,8 +50,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'covisan';
-$db['default']['password'] = 'covisan';
-$db['default']['database'] = 'covisan';
+$db['default']['password'] = 'bodegascovisan2014';
+$db['default']['database'] = 'covisandb';
 $db['default']['dbdriver'] = 'postgre';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
