@@ -57,7 +57,7 @@ class Productos extends CI_Controller
      */
     function subir_imagen()
     {
-        $config['upload_path'] = 'uploads/carteles';
+        $config['upload_path'] = './uploads/carteles';
         $config['allowed_types'] = 'gif|jpg|png';
         $config['max_size'] = '1000';
         $config['max_width'] = '1500';
