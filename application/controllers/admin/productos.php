@@ -71,7 +71,7 @@ class Productos extends CI_Controller
         {
             $data['error'] = $this->upload->display_errors();
             $data['id_producto'] = $this->input->post('id_producto');
-            
+
             redir_admin('admin/subir_imagen', $data);
         }
         else
