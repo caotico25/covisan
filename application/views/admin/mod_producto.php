@@ -1,7 +1,7 @@
 <section class="adminicio">
     <h2>Modificar producto.</h2>
     <article>
-        <p class="tel">Modificque los datos necesarios del producto:</p>
+        <p class="tel">Modifique los datos necesarios del producto:</p>
         <?= form_open('admin/productos/modificar_producto') ?>
             <p class="error"><?= strip_tags(form_error('nombre')) ?></p>
             <label for="nombre">Nombre</label><input type="text" name="nombre" value="<?= $producto['nombre'] ?>" id="nombre"/>

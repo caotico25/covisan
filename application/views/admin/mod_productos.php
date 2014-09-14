@@ -10,8 +10,8 @@
             </div>
             <div class="cuerpo">
                 <?php foreach ($productos as $producto): ?>
-                    <div><?= $producto['nombre'] ?></div>
-                    <div>
+                    <div class="celda"><?= $producto['nombre'] ?></div>
+                    <div class="celda">
                         <?= form_open('admin/productos/modificar_producto') ?>
                             <input type="hidden" name="id_producto" value="<?= $producto['id']?>" id="id_producto"/>
                             <input type="submit" name="modificar" value="Modificar" id="modificar"/>
@@ -22,7 +22,7 @@
                         <?= form_close() ?>
                     </div>
                 <?php endforeach ?>
-                <div>
+                <div class="celda">
                     <?= form_open('admin/productos/nuevo_producto', array('class' => 'anadir')) ?>
                         <input type="submit" name="anadir" value="Añadir nuevo producto" id="anadir" class="anadir" />
                     <?= form_close() ?>

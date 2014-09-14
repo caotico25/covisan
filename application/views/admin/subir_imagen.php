@@ -13,7 +13,7 @@
             <div class="boton"><input type="submit" name="enviar" value="Finalizar" id="enviar"/></div>
         <?= form_close() ?>
         <?= form_open('admin/productos') ?>
-            <div class="boton"><input type="submit" name="volver" value="Volver" id="volver"/></div>
+            <input type="submit" name="volver" value="Volver" id="volver"/>
         <?= form_close() ?>
     </article>
 </section>

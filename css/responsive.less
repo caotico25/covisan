@@ -299,6 +299,18 @@ body
                 }
             }
             
+            form:last-of-type
+            {
+                
+                .column(11);
+                
+                input[type="submit"]
+                {
+                    .column(3);
+                    .push(4);
+                }
+            }
+            
             .tabla
             {
                 border:1px solid black;
@@ -329,13 +341,14 @@ body
                 
                 .cuerpo
                 {
-                    div
+                    .celda
                     {
                         background-color: #e9e9e9;
+                        margin-bottom: 5px;
                         
                         &:hover
                         {
-                            background-color: #aaaaff;
+                            background-color: #d9d9ff;
                         }
                         
                         form
@@ -363,7 +376,7 @@ body
                             }
                         }
                         
-                        &:first-child
+                        &:nth-child(2n+1)
                         {
                             padding-top: 8px;
                             padding-bottom: 8px;
