@@ -19,9 +19,9 @@ drop table productos;
 
 create table productos (
 	id				bigserial		constraint pk_productos primary key,
-	nombre			varchar(20)		not null constraint uq_nombre_productos unique,
+	nombre			varchar(20)		not null,
 	descripcion		text			not null,
-	imagen			text,	--AQUI SE ALMACENA LA IMAGEN--
+	imagen			text,
 	precio			numeric(5,2)	not null
 );
 
