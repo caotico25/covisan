@@ -16,8 +16,91 @@ class Productos extends CI_Controller
     /*
      * 
      */
-    function anadir()
+    function nuevo_producto()
     {
-        redir_admin('admin/anadir_producto');
+        $reglas = array(
+                        array(
+                            'field' => 'nombre',
+                            'label' => 'nombre',
+                            'rules' => 'trim|required|max_length[20]'
+                        ),
+                        array(
+                            'field' => 'descripcion',
+                            'label' => 'descripcion',
+                            'rules' => 'trim|required|'
+                        ),
+                        array(
+                            'field' => 'precio',
+                            'label' => 'precio',
+                            'rules' => 'trim|required|numeric'
+                        ),
+                    );
+        
+        $this->form_validation->set_rules($reglas);
+        
+        if ($this->form_validation->run() == FALSE)
+        {
+            redir_admin('admin/alta_producto');
+        }
+        else
+        {
+            $data['id_producto'] = $this->Producto->alta($this->input->post());
+            $data['error'] = '';
+            
+            redir_admin('admin/subir_imagen', $data);
+        }
     }
+    
+    
+    /*
+     *      Funcion para subir imagen de producto
+     */
+    function subir_imagen()
+    {
+        $config['upload_path'] = './uploads/carteles';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = '1000';
+        $config['max_width'] = '1500';
+        $config['max_height'] = '1500';
+        $config['remove_spaces'] = TRUE;
+        
+        $this->load->library('upload',$config);
+        
+        if (!$this->upload->do_upload('imagen'))
+        {
+            $data['error'] = $this->upload->display_errors();
+            $data['id_producto'] = $this->input->post('id_producto');
+            
+            redir_admin('admin/subir_imagen', $data);
+        }
+        else
+        {
+            $datos = $this->upload->data();
+            $file = $datos['file_name'];
+            $this->Producto->imagen($file, $this->input->post('id_producto'));
+            
+            redirect('admin/productos');
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

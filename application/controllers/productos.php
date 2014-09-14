@@ -7,7 +7,9 @@ class Productos extends CI_Controller
      */
     function index()
     {
-        redir_sitio('sitio/productos');
+        $data['productos'] = $this->Producto->obtener_productos();
+        
+        redir_sitio('sitio/productos', $data);
     }
     
 }

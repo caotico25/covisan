@@ -1,6 +1,19 @@
 <section id="productos" class="seccion">
     <h2>Nuestros productos</h2>
     <article>
+        <?php foreach ($productos as $producto): ?>
+            <div class="articulo">
+                <figure>
+                    <img src="<?= $producto['imagen'] ?>" alt="" width="350" height="400" />
+                </figure>
+                <div>
+                    <h1><?= $producto['nombre'] ?></h1>
+                    <p><?= $producto['descripcion'] ?></p>
+                    <p><?= $producto['precio'] ?></p>
+                </div>
+            </div>
+        <?php endforeach ?>
+        
         <div class="articulo">
             <figure>
                 <img src="images/botellasmanzanilla.jpg" alt="botellas de manzanilla" width="350" height="400" />
@@ -13,7 +26,7 @@
         </div>
         <div class="articulo">
             <figure>
-                <img src="images/cajaybotella2.jpg" alt="caja especial y botella de vino de mesa" width="350" height="325" />
+                <img src="images/cajaybotella2.jpg" alt="caja especial y botella de vino de mesa" width="350" height="400" />
                 <figcaption>Nuestro vino en su modalidad caja con dispensador.</figcaption>
             </figure>
             <div>
