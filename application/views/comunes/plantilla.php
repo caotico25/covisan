@@ -15,7 +15,7 @@
         <div id="contenedor">
             
             <header>
-                <a href="<?= base_url('inicio') ?>" > </a>
+                <a href="inicio" > </a>
                 
                 <nav>
                     <a href="<?= base_url('inicio') ?>" >Inicio</a>
