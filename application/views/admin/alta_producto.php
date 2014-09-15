@@ -8,7 +8,7 @@
             <p class="error"><?= strip_tags(form_error('descripcion')) ?></p>
             <label for="descripcion">Descripción</label><textarea name="descripcion" id="descripcion"></textarea>
             <p class="error"><?= strip_tags(form_error('precio')) ?></p>
-            <label for="precio">Precio</label><input type="number" name="precio" value="" id="precio" placeholder="00.00" step="any"/>
+            <label for="precio">Precio</label><input type="text" name="precio" value="" id="precio" placeholder="00.00" step="any"/>
             <div class="boton"><input type="submit" name="enviar" value="Continuar" id="enviar"/></div>
         <?= form_close() ?>
         <?= form_open('admin/productos') ?>
