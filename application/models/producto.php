@@ -92,7 +92,7 @@ class Producto extends CI_Model
     {
         extract($datos);
         
-        $this->db->query("update productos set nombre = ?, descripcion = ?, precio = $precio", array($nombre, $descripcion));
+        $this->db->query("update productos set nombre = ?, descripcion = ?, precio = ?", array($nombre, $descripcion, $precio));
     }
     
     
