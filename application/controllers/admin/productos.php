@@ -32,7 +32,7 @@ class Productos extends CI_Controller
                         array(
                             'field' => 'precio',
                             'label' => 'precio',
-                            'rules' => 'trim|required|'
+                            'rules' => 'trim|required'
                         ),
                     );
         
@@ -115,7 +115,7 @@ class Productos extends CI_Controller
                         array(
                             'field' => 'precio',
                             'label' => 'precio',
-                            'rules' => 'trim|required|numeric'
+                            'rules' => 'trim|required'
                         ),
                     );
         
