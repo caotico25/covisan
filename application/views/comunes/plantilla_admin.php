@@ -5,8 +5,8 @@
         <meta charset="UTF-8" />
         <title>Bodegas Covisan</title>
         <script src="<?= base_url('javascript/jquery-1-10-2.js') ?>" type="text/javascript" charset="utf-8"></script>
-        <link rel="stylesheet/less" href="css/responsive.less" type="text/css" media="screen" />
-        <script src="javascript/less.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet/less" href="<?= base_url('css/responsive.less') ?>" type="text/css" media="screen" />
+        <script src="<?= base_url('javascript/less.js') ?>" type="text/javascript" charset="utf-8"></script>
         <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'> <!-- FUENTE CABECERA -->
         <script type="text/javascript">
             
