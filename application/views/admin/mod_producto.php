@@ -16,5 +16,8 @@
             <input type="hidden" name="id_producto" value="<?= $producto['id'] ?>" id="id_producto"/>
             <input type="submit" name="enviar" value="Modificar imagen" id="enviar"/>
         <?= form_close() ?>
+        <?= form_open('admin/productos') ?>
+            <input type="submit" name="volver" value="Volver" id="volver"/>
+        <?= form_close() ?>
     </article>
 </section>
