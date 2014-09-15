@@ -22,7 +22,7 @@ create table productos (
 	nombre			varchar(20)		not null,
 	descripcion		text			not null,
 	imagen			text,
-	precio			varchar(30)		not null
+	precio			varchar(50)		not null
 );
 
 
