@@ -1,4 +1,4 @@
-<section class="admin">
+<section class="adminicio">
     <h2>Login de administrador</h2>
     <article>
         <p class="tel">Introduzca nombre y contraseña para acceder a la zona de administrador.</p><br /><br />
