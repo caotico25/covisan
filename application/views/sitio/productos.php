@@ -8,8 +8,8 @@
                 </figure>
                 <div>
                     <h1><?= $producto['nombre'] ?></h1>
-                    <p><?= $producto['descripcion'] ?></p>
-                    <p>Precio por unidad: <?= $producto['precio'] ?> €</p>
+                    <p><?= nl2br($producto['descripcion']) ?></p>
+                    <p>Precios por unidad: <?= $producto['precio'] ?></p>
                 </div>
             </div>
         <?php endforeach ?>
