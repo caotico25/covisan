@@ -11,5 +11,8 @@
             <div class="presen"><textarea name="content"><?= $content->presentacion ?></textarea></div>
             <div class="boton"><input type="submit" name="modificar" value="Modificar" id="modificar"/></div>
         <?= form_close() ?>
+        <?= form_open('admin/inicio') ?>
+            <input type="submit" name="volver" value="Volver" id="volver"/>
+        <?= form_close() ?>
     </article>
 </section>
