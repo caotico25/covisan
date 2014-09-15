@@ -16,7 +16,7 @@ class Producto extends CI_Model
      */
     function obtener_productos_base()
     {
-        $res = $this->db->query("select id, nombre from productos");
+        $res = $this->db->query("select id, nombre from productos order by id");
         
         return $res->result_array();
     }
