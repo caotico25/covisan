@@ -6,7 +6,7 @@
     <article>
         <p class="tel">Realice los cambios necesarios.</p>
         <p class="tel">RECUERDE: una vez guardados, los cambios no podrán recuperarse.</p>
-        <p class="error"><?= strip_tags($mensaje) ?></p>
+        <p class="error"><?= strip_tags($this->session->flashdata('mensaje')) ?></p>
         <?= form_open('admin/presentaciones/modificar_presentacion') ?>
             <div class="presen"><textarea name="content"><?= $content->presentacion ?></textarea></div>
             <div class="boton"><input type="submit" name="modificar" value="Modificar" id="modificar"/></div>
