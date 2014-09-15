@@ -22,7 +22,7 @@ create table productos (
 	nombre			varchar(20)		not null,
 	descripcion		text			not null,
 	imagen			text,
-	precio			numeric(5,2)	not null
+	precio			varchar(30)		not null
 );
 
 
@@ -43,3 +43,11 @@ CREATE TABLE ci_sessions (
 );
 
 create index last_activity_idx on ci_sessions (last_activity);
+
+
+insert into presentaciones (presentacion)
+values ('La Cooperativa del Campo Vitivinícola Sanluqueña COVISAN fue constituida el 13 de Julio de 1968, inicialmente formada por 41 socios.');
+
+
+insert into usuarios (usuario, passwd)
+values ('admin', md5('covisan'));
