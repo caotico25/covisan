@@ -51,7 +51,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-5 col-sm-offset-1">
                                 <p class="text-center lead">
                                     La Cooperativa del Campo Vitivinícola Sanluqueña COVISAN fue constituida el 13 de Julio de 1968, inicialmente formada por 41 socios.
                                     <br /><br />
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="col-sm-5">
+                            <div class="col-sm-4 col-sm-offset-1">
                                 <img src="images/marco-jerex.jpg" alt="Ruta del vino y el brandy" class="img-responsive" />
                             </div>
                             <div class="col-sm-6">
