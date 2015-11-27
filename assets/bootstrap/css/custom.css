@@ -70,7 +70,13 @@
     }
 }
 
-
+@media (min-width: @screen-lg-min)
+{
+    .articulo
+    {
+        margin: 20px;
+    }
+}
 
 
 
