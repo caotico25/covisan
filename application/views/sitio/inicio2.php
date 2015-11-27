@@ -32,7 +32,7 @@
                     <div class="nav-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
-                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-bars"></i> Menu
                         </button>
                     </div>
                     <div class="navbar-collapse collapse" id="navbar">

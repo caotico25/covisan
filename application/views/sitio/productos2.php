@@ -4,6 +4,9 @@
     <head>
         <meta charset="UTF-8" />
         <title>Bodegas Covisan</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>" type="text/css" />
         <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap-theme.min.css') ?>" type="text/css" />
         <link rel="stylesheet" href="<?= base_url('assets/bootstrap/fonts/font-awesome/css/font-awesome.min.css') ?>" type="text/css" />
@@ -29,7 +32,7 @@
                     <div class="nav-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
-                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-bars"></i> Menu
                         </button>
                     </div>
                     <div class="navbar-collapse collapse" id="navbar">
