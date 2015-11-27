@@ -73,7 +73,7 @@
                             <div class="col-sm-4">
                                 <img src="images/marco-jerex.jpg" alt="Ruta del vino y el brandy" class="img-responsive" />
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-1">
                                 <img src="images/covisan.jpg" alt="Logotipo de COVISAN" class="img-responsive" />
                             </div>
                             <div class="col-sm-5">
