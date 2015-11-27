@@ -4,6 +4,9 @@
     <head>
         <meta charset="UTF-8" />
         <title>Bodegas Covisan</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>" type="text/css" />
         <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap-theme.min.css') ?>" type="text/css" />
         <link rel="stylesheet" href="<?= base_url('assets/bootstrap/fonts/font-awesome/css/font-awesome.min.css') ?>" type="text/css" />
