@@ -62,6 +62,16 @@
     margin: 20px;
 }
 
+/*  MOVILES */
+@media (max-width: @screen-xs-max)
+{
+    .articulo
+    {
+        margin: 5px;
+    }
+    
+}
+
 
 
 
