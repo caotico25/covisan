@@ -58,19 +58,18 @@
 
 .articulo
 {
-    border: 1px solid black;
-    margin: 20px;
+    margin: 5px;
 }
 
-/*  MOVILES */
-@media (max-width: @screen-xs-max)
+@media (min-width: @screen-md-min)
 {
     .articulo
     {
-        margin: 5px;
+        border: 1px solid black;
+        margin: 20px;
     }
-    
 }
+
 
 
 
