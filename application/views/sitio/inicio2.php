@@ -34,9 +34,9 @@
                     </div>
                     <div class="navbar-collapse collapse" id="navbar">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="<?= base_url('inicio') ?>" >Inicio</a></li>
-                            <li><a href="<?= base_url('productos') ?>" >Productos</a></li>
-                            <li><a href="<?= base_url('contacta') ?>" >Contacto</a></li>
+                            <li class="active"><a class="titulo" href="<?= base_url('inicio') ?>" >Inicio</a></li>
+                            <li><a class="titulo" href="<?= base_url('productos') ?>" >Productos</a></li>
+                            <li><a class="titulo" href="<?= base_url('contacta') ?>" >Contacto</a></li>
                         </ul>
                     </div>
                 </nav>
