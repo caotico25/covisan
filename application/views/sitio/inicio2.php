@@ -75,7 +75,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <br />
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <img src="images/covisan.jpg" alt="Logotipo de COVISAN" class="img-responsive" />
                                 </div>
                                 <p class="text-center lead">Bodegas COVISAN forma parte del Marco de Jerez y la ruta del vino y el brandy.</p>
