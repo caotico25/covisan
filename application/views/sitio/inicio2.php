@@ -65,10 +65,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="col-sm-6">
-                                <img src="images/covisan.jpg" alt="Logotipo de COVISAN" class="img-responsive" />
-                            </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-sm-offset-6">
                                 <img src="images/DepositoFermentacionControladaINOX.png" alt="Depósitos de fermentación controlada de acero inoxidable" class="img-responsive" />
                             </div>
                         </div>
@@ -78,6 +75,9 @@
                             </div>
                             <div class="col-sm-6">
                                 <br />
+                                <div class="col-sm-2">
+                                    <img src="images/covisan.jpg" alt="Logotipo de COVISAN" class="img-responsive" />
+                                </div>
                                 <p class="text-center lead">Bodegas COVISAN forma parte del Marco de Jerez y la ruta del vino y el brandy.</p>
                                 <p class="text-center lead">Nuestras bodegas están disponibles para los visitantes:</p>
                                 <p class="text-center lead">Horario de vistas: Sábados de 11:00 a 14:00.</p>
