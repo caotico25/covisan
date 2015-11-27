@@ -9,6 +9,6 @@ class Inicio extends CI_Controller
     {
         $data['presentacion'] = $this->Presentacion->obtener();
         
-        redir_sitio('sitio/inicio', $data);
+        $this->load->view('sitio/inicio2',$data);
     }
 }

@@ -1,0 +1,68 @@
+.fondo
+{
+    background-image: url("../../../images/fondo22.jpg");
+    background-attachment: fixed;
+}
+
+.cabecera
+{
+    min-width: 100%;
+}
+
+.navbar
+{
+    border-top: 4px solid #F0B32F;
+    border-bottom: 4px solid #F0B32F;
+}
+
+.panel-heading
+{
+    border-bottom: 4px solid #F0B32F !important;
+}
+
+.bg-gris-claro
+{
+    background-color: #F7F7F7;
+}
+
+.bg-gradiente
+{
+    background: linear-gradient(white, rgb(240,179,47));
+}
+
+.panel
+{
+    margin-top: 10px;
+}
+
+.sombreado
+{
+    -webkit-box-shadow: 6px 8px 5px 0px rgba(50, 50, 50, 0.49);
+    -moz-box-shadow:    6px 8px 5px 0px rgba(50, 50, 50, 0.49);
+    box-shadow:         6px 8px 5px 0px rgba(50, 50, 50, 0.49);
+}
+
+.titulo
+{
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(126,45,36) !important;
+}
+
+.list-group-item
+{
+    background: transparent;
+}
+
+.articulo
+{
+    border: 1px solid black;
+    margin: 20px;
+}
+
+
+
+
+

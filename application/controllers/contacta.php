@@ -7,7 +7,7 @@ class Contacta extends CI_Controller
      */
     function index()
     {
-        redir_sitio('sitio/contacta');
+        $this->load->view('sitio/contacta2');
     }
     
     
@@ -48,11 +48,11 @@ class Contacta extends CI_Controller
         
         if ($this->email->send())
         {
-            $this->session->set_flashdata('envio', 'Email enviado correctamente');
+            $this->session->set_flashdata('envio', array('cabecera' => 'Email enviado', 'cuerpo' => 'Muchas gracias por contactar con nosotros.'));
         }
         else
         {
-            $this->session->set_flashdata('envio','Error al enviar email');
+            $this->session->set_flashdata('error',array('cabecera' => 'Error al enviar email', 'cuerpo' => 'Ha ocurrido un error en nuestros servidores.'));
         }
 
         redirect('contacta');

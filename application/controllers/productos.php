@@ -9,7 +9,7 @@ class Productos extends CI_Controller
     {
         $data['productos'] = $this->Producto->obtener_productos();
         
-        redir_sitio('sitio/productos', $data);
+        $this->load->view('sitio/productos2', $data);
     }
     
 }
