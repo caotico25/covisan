@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="col-sm-6 col-sm-offset-2">
+                            <div class="col-sm-6 col-sm-offset-6">
                                 <img src="images/DepositoFermentacionControladaINOX.png" alt="Depósitos de fermentación controlada de acero inoxidable" class="img-responsive" />
                             </div>
                         </div>
