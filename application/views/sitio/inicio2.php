@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 hidden-phone">
                                 <img src="images/covisan.jpg" alt="Logotipo de COVISAN" class="img-responsive" />
                             </div>
                             <div class="col-sm-6 col-sm-offset-2">
@@ -79,7 +79,7 @@
                             <div class="col-sm-4">
                                 <img src="images/marco-jerex.jpg" alt="Ruta del vino y el brandy" class="img-responsive" />
                             </div>
-                            <div class="col-sm-1">
+                            <div class="col-sm-1 visible phone">
                                 <img src="images/covisan.jpg" alt="Logotipo de COVISAN" class="img-responsive" />
                             </div>
                             <div class="col-sm-6">
