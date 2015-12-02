@@ -68,9 +68,6 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="col-sm-4 hidden-xs">
-                                <img src="images/covisan.jpg" alt="Logotipo de COVISAN" class="img-responsive" />
-                            </div>
                             <div class="col-sm-6 col-sm-offset-2">
                                 <img src="images/DepositoFermentacionControladaINOX.png" alt="Depósitos de fermentación controlada de acero inoxidable" class="img-responsive" />
                             </div>
