@@ -33,7 +33,7 @@ class Contacta extends CI_Controller
         
         $this->email->from('bodegascovisan@gmail.com', 'Covisan');
         
-        $this->email->to('bodegascovisan@gmail.com');
+        $this->email->to('admin@covisan.net');
         
         
         $this->email->subject($this->input->post('asunto'));
